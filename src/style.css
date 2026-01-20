@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 ul {
@@ -17,3 +18,173 @@ img {
 }
 
 /* Add your styles below */
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+nav>a{
+  display: flex;
+  display: inline-block;
+  gap: 30px;
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+}
+nav>a:hover{
+  color: green;
+}
+.img-logo{
+  width: 120px;
+  padding: 30px;
+}
+header>h1{
+  color: green;
+}
+
+
+
+
+.main-container{
+  padding: 30px;
+  background-color: #1e1e1e;
+
+  
+}
+main>h1{
+  font-size: 1.5rem;
+  color: green;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+
+
+.first-section{
+  display: grid;
+  grid-template-columns: 1fr ;
+  padding: 30px;
+  background-color:#1e1e1e;
+  gap: 15px;
+  
+}
+
+
+section>ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+   max-width: 1200px;
+ 
+}
+
+.first-section>ul>li{
+  
+  background-color: black;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+
+}
+section>ul>li>figure>figcaption{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+section>ul>li>figure>img{
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+footer>p{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+footer>p>span{
+  color: green;
+}
+
+section>h1{
+  font-size: 1.5rem;
+  color: green;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+}
+
+.second-section{
+  display: flex;
+  flex-direction: column;
+  background-color:#1e1e1e;
+  gap: 15px;
+}
+
+.second-section>ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 30px;
+}
+.second-section>ul>li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  
+
+}
+
+.second-section>ul>li>figure>img{
+  padding: 15px;
+  border-radius: 4px;
+  height: 180px;
+  width: 180px;
+  border: 1px solid #000000;
+}
+
+.second-section>ul>li>figure>figcaption{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+ font-family: Segoe UI, Tahoma ;
+ padding-bottom: 8px;
+}
+
+.second-section>ul>li>figure>p{
+  font-size: 0.9rem;
+  color: rgb(234, 245, 255);
+  font-family:  sans-serif;
+}
+
+.second-section>footer>p{
+  padding: 20px;
+}
+
+
+.second-section>footer>p>span{
+  padding-left: 6px;
+  padding-right: 5px;
+}
+
+.second-section>footer>p>span.heart::before{
+  content: "❤️";
+}
+.second-section>ul>li>figure{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+

@@ -19,172 +19,172 @@ img {
 
 /* Add your styles below */
 
+:root {
+  --color-bg: #1e1e1e;
+  --color-bg-card: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: rgb(234, 245, 255);
+  --color-accent: green;
+  --color-border: #000000;
+}
 .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background-color: var(--color-bg-card);
 }
 
-nav>a{
+nav ul {
   display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+
+nav ul li a {
   display: inline-block;
-  gap: 30px;
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   padding-right: 30px;
 }
-nav>a:hover{
-  color: green;
+nav ul li a:hover {
+  color: var(--color-accent);
 }
-.img-logo{
+ 
+.img-logo {
   width: 120px;
   padding: 30px;
 }
-header>h1{
-  color: green;
+ 
+header > h1 {
+  color: var(--color-accent);
 }
 
-
-
-
+/* Main Container */
 .main-container{
   padding: 30px;
-  background-color: #1e1e1e;
+  background-color: var(--color-bg);
 
   
 }
 main>h1{
   font-size: 1.5rem;
-  color: green;
+  color: var(--color-accent);
   padding-bottom: 20px;
   padding-left: 30px;
 }
 
 
-
 .first-section{
-  display: grid;
-  grid-template-columns: 1fr ;
   padding: 30px;
-  background-color:#1e1e1e;
-  gap: 15px;
-  
+  background-color: var(--color-bg);
+  margin-bottom: 40px;
 }
 
 
-section>ul{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-   max-width: 1200px;
- 
-}
-
-.first-section>ul>li{
-  
-  background-color: black;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  padding: 8px;
+.first-section > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
-
+  gap: 15px;
+  max-width: 1200px;
 }
-section>ul>li>figure>figcaption{
-  color: white;
+
+
+.first-section > ul > li {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+section > ul > li > figure > figcaption {
+  color: var(--color-text);
   font-weight: bold;
   text-align: center;
 }
 
 
-
-section>ul>li>figure>img{
+section > ul > li > figure > img {
   width: 100px;
   height: 100px;
   border-radius: 4px;
 }
 
-footer>p{
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-footer>p>span{
-  color: green;
-}
 
-section>h1{
+section > h1 {
   font-size: 1.5rem;
-  color: green;
+  color: var(--color-accent);
   padding-left: 30px;
   padding-bottom: 20px;
-
 }
-
-.second-section{
+ 
+.second-section {
   display: flex;
   flex-direction: column;
-  background-color:#1e1e1e;
+  background-color: var(--color-bg);
   gap: 15px;
 }
-
-.second-section>ul{
+ 
+.second-section > ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding-left: 30px;
 }
-.second-section>ul>li{
+ 
+.second-section > ul > li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
-  border: 1px solid #000000;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
-  
-
 }
-
-.second-section>ul>li>figure>img{
+ 
+.second-section > ul > li > figure > img {
   padding: 15px;
   border-radius: 4px;
   height: 180px;
   width: 180px;
-  border: 1px solid #000000;
+  border: 1px solid var(--color-border);
 }
-
-.second-section>ul>li>figure>figcaption{
-  color: rgb(255, 255, 255);
+ 
+.second-section > ul > li > figure > figcaption {
+  color: var(--color-text);
   font-weight: bold;
- font-family: Segoe UI, Tahoma ;
- padding-bottom: 8px;
+  font-family: Segoe UI, Tahoma;
+  padding-bottom: 8px;
 }
-
-.second-section>ul>li>figure>p{
+ 
+.second-section > ul > li > figure > p {
   font-size: 0.9rem;
-  color: rgb(234, 245, 255);
-  font-family:  sans-serif;
+  color: var(--color-text-muted);
+  font-family: sans-serif;
 }
-
-.second-section>footer>p{
-  padding: 20px;
-}
-
-
-.second-section>footer>p>span{
-  padding-left: 6px;
-  padding-right: 5px;
-}
-
-.second-section>footer>p>span.heart::before{
-  content: "❤️";
-}
-.second-section>ul>li>figure{
+ 
+.second-section > ul > li > figure {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 15px;
+}
+ 
+/* Footer */
+ 
+footer > p {
+  display: flex;
+  justify-content: center;
+  color: var(--color-text);
+  padding: 20px;
+}
+ 
+footer > p > span {
+  color: var(--color-accent);
+  padding-left: 6px;
+  padding-right: 5px;
+}
+ 
+footer > p > span.heart::before {
+  content: "❤️";
 }
 
